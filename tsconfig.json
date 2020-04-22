@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    // 允许导入没有默认导出的模块
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
@@ -17,9 +14,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    // 检查定义了但是未使用的变量
+    "noUnusedLocals": true,
+    // 定义未使用的参数
+    "noUnusedParameters": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
