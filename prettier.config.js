@@ -1,11 +1,11 @@
 // prettier负责代码格式约定
 module.exports = {
-  // 一行最多 100 字符
-  printWidth: 100,
-  // 使用 4 个空格缩进
+  // 一行最多 200 字符
+  printWidth: 200,
+  // 使用 2 个空格缩进
   tabWidth: 2,
   // 不使用缩进符，而使用空格
-  useTabs: false,
+  useTabs: true,
   // 行尾需要有分号
   semi: false,
   // 使用单引号
